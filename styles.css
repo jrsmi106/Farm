@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap')
 
-body {
+body{
     background-color: #ffffff;
-
 }
 
 header{
@@ -12,3 +11,17 @@ header{
 
 }
 
+.container {
+
+    position: relative;
+
+
+
+}
+
+.text-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   
+}
