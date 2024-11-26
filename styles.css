@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap')
+
 body {
     background-color: #ffffff;
 
@@ -5,5 +7,8 @@ body {
 
 header{
     background-color:#06A816;
+    color: #ffffff;
+    font-family: @import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');;
 
 }
+
