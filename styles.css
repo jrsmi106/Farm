@@ -55,27 +55,19 @@ table {
     
 }
 
-header{   
-    display: grid;
-    grid-template-columns: 1fr ;
+header{
+    text-align: left;   
     background-color: var(--green);
     font-size: 1.25em;
     color: var(--white);
-    padding:  10px;
-    position: relative;
+    
     
 
 }
-header p{
-    display: grid;
-    font-style: italic;
-    margin-top: 20px;
-    justify-content: space-between;
-
-}
-header div{
-    display: flex;
-
+header p {
+ 
+    margin-top: 10px;
+    text-align: left;
 }
 
 h1{
@@ -116,11 +108,7 @@ main{
 }
 main p {
     margin: 10px;
-   
 
-}
-
-h2{
 }
 
 h3{
@@ -251,7 +239,6 @@ dl{
     
     header{
         position: relative;
-        padding-bottom: 40px;
         
     }
     nav{
@@ -259,9 +246,6 @@ dl{
         margin-top: 20px;
     }
 
-    header p{
-        text-align: right;
-    }
 
     .fruits {
         grid-template-columns: 1fr 1fr;
@@ -281,8 +265,7 @@ dl{
         width: 100;
      }
 
-    header p{
-        text-align: right;
+    
 
     }
 
@@ -294,16 +277,11 @@ dl{
     }
 
 
-    
-}
 /* --------------------MEDIA QUERY (XL) --------------------*/
 
 @media screen and (min-width:1440px) {
 
-    header p {
-        text-align: right;
-       
-    }
+
     .fruits {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
