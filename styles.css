@@ -55,29 +55,41 @@ table {
     
 }
 
-header{
+header{   
     display: grid;
-    grid-template-columns: 25%;
+    grid-template-columns: 1fr ;
     background-color: var(--green);
     font-size: 1.25em;
     color: var(--white);
     padding:  10px;
-    display: block;
-    width: 100%;
 
 }
 header p{
+    display: grid;
+    gri
     font-style: italic;
     margin-top: 20px;
+    justify-content: space-between;
+
+}
+header div{
+    display: flex;
+
 }
 
 h1{
-    display: block;
     font-size: 2.5em;
     color:var(--white);
     font-family: "Irish Grover" ;
     text-shadow: 2px 2px var(--black);
+  
     
+    
+}
+
+
+nav{
+    width: fit-content;
 
 }
 
@@ -98,6 +110,9 @@ main p {
 
 }
 
+h2{
+}
+
 h3{
     text-align: center;
     margin: 20px;
@@ -108,22 +123,15 @@ h3 + p{
     font-size: 1.25em;
     margin: 10px;
 }
-nav ul{
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: block;
-}
+
 
 button{
     background-color: var(--orange);
     outline: var(--white) ;
     color: var(--white);
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 10px;
+    right: 10px;
     z-index: 99;
 }
 
@@ -131,9 +139,8 @@ nav li{
     background-color: #E75D02;
     outline: var(--white) ;
     color: var(--white);
-    display: block;
     text-align: center;
-    float: left;
+    float: none;
     padding: 5px 100px;
     border: 1px solid var(--white);
     margin: 20px;
@@ -142,14 +149,14 @@ nav li{
 
 .fruits {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin: 20px;
 }
 
 .vegetables {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin: 20px;
 }
@@ -158,7 +165,6 @@ figure {
     position: relative;
     width: fit-content;
     display: grid;
-    gap: 20px;
      
 }
 
@@ -175,6 +181,8 @@ figcaption {
     padding: 20px;
     top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
+
     
 }
 
@@ -209,21 +217,104 @@ dl{
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 @media screen and (min-width:428px) {
+    header{
+        display: flex;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+      
+    }
+
+    header p{
+        text-align: right;
+       
+    }
+
+
+    .fruits {
+        grid-template-columns: 1fr;
+    }
+
+
+    .vegetables {
+        grid-template-columns: 1fr;
+    }
+
 
 }
 
 /* --------------------MEDIA QUERY (medium) --------------------*/
 
 @media screen and (min-width:834px) {
+    
+    header{
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    header p{
+        text-align: right;
+    }
+
+    .fruits {
+        grid-template-columns: 1fr 1fr;
+    }
+    .vegetables {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer h2 {
+        display: flex;
+      
+
+}
 
 }
 /* --------------------MEDIA QUERY (large) --------------------*/
 
 @media screen and (min-width:1280px) {
+    header{
+        
+        
+      
+    }
 
+    header p{
+        text-align: right;
+
+    }
+
+    .fruits {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .vegetables {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
 }
 /* --------------------MEDIA QUERY (XL) --------------------*/
 
 @media screen and (min-width:1440px) {
 
+    header{
+        
+        
+      
+    }
+
+    header p {
+        text-align: right;
+       
+    }
+    .fruits {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .vegetables {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+    
+}
+}
 }
